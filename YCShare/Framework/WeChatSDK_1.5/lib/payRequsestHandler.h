@@ -46,15 +46,15 @@
  @brief 对应的服务器URL
  @note  回调时候需要使用
  */
-#define MAXER_URL_PREFIX        @"http://app.test3.max99.cn"
+#define MAXER_URL_PREFIX     @""
 //APPID
-#define APP_ID          @"wx4cedea3e605157c2"
+#define APP_ID          @""
 //appsecret
-#define APP_SECRET      @"b93e5563426922c0fffbaee22d55bee1"
+#define APP_SECRET      @""
 //商户号，填写商户对应参数
-#define MCH_ID          @"1267040901"
+#define MCH_ID          @""
 //商户API密钥，填写相应参数
-#define PARTNER_ID      @"xozaa1234567890xozaa0987654321aa"
+#define PARTNER_ID      @""
 //支付结果回调页面
 #define NOTIFY_URL      [NSString stringWithFormat:@"%@/callbackwx.php",MAXER_URL_PREFIX]
 //获取服务器端支付数据地址（商户自定义）
