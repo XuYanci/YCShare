@@ -10,20 +10,20 @@
 #define Global_h
 
 ////////////////////////////////////////////// 第三方登陆 /////////////////////////////////////////////////////////////
-#define MAX_SINA_WEIBO_APP_ID           @"2055664344"
-#define MAX_SINA_WEIBO_APP_SECRET       @"08cc88c1db771a21824d2fa3999a1009"
-#define MAX_SINA_WEIBO_REDIRECT_URL     @"http://max99.cn"
+#define MAX_SINA_WEIBO_APP_ID           @""
+#define MAX_SINA_WEIBO_APP_SECRET       @""
+#define MAX_SINA_WEIBO_REDIRECT_URL     @""
 
-#define MX_QQ_APP_ID                    @"1104777270"
-#define MX_QQ_APP_KEY                   @"icuZiP4Rp3p7vGeF"
+#define MX_QQ_APP_ID                    @""
+#define MX_QQ_APP_KEY                   @""
 
 // 微信登陆 APPKEY
-#define MX_WEIXIN_APP_ID_LOGIN          @"wx2d56b8d5de8bec05"
-#define MX_WEIXIN_APP_ID_LOGIN_SECRET   @"8fbe83240c7e1650a2525139376b9578"
+#define MX_WEIXIN_APP_ID_LOGIN          @""
+#define MX_WEIXIN_APP_ID_LOGIN_SECRET   @""
 
 // 微信支付 APPKEY
-#define MX_WEIXIN_APP_ID                @"wx4cedea3e605157c2"
-#define MX_WEIXIN_APP_SECRET            @"b93e5563426922c0fffbaee22d55bee1"
+#define MX_WEIXIN_APP_ID                @""
+#define MX_WEIXIN_APP_SECRET            @""
 
 
 

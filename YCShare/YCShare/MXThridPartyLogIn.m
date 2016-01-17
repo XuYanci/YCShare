@@ -16,17 +16,11 @@
 #import "payRequsestHandler.h"
 
 //////////////////////////////// 支付宝 ////////////////////////////////////
-NSString * const partner = @"2088021606136083";
-NSString * const seller = @"llxx@maxer.com.cn";
-NSString * const privateKey = @"MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBAN0DxRiFMKi7fdTsPXrCl+a9T3DRKy6Xxoj5Zm0KkXgwkjV0JMA9lMtxoriLy7lSudpBztPleN4JtYwJfL0oNaGs+4T1UA/bgFJCfl8sxYFE/YmALdZFygmAcm0DQXkiSadHdDV9BjS/wwx1jZb6QC2MuUvVEF9NM8ox1GKXeRcPAgMBAAECgYEAwbt3Pkop4A4Re93k+kGu81SIWSUQzBPAtPqg/P4hi5BP6Uk4mcahMkAW2du4pWdNgHLlALsKWt954xnB3PFtJ/zArYy/63wJntOBuTxhQ8SK/qw/32rXqED8Eyklgg+d7vSfUrJSALMT2sQDfQDq2jF1M0oYxFcAqfG+QF3o3qECQQD5qU3jZqHKBiatksseBh0AkoUPQeN7NcUWi4az4rsIGPrkz7QDXC31pzWfpzYzwQijNGp/kIXQhZZkIeYh9z/fAkEA4qBGQnBLN0QaUCTcTETRCFbqAoKqcL6h90s5J+FHjkWWr2oHbZ7D8eV7cBPD4r7kC5A0amLApzhaDe3evdhO0QJBAMWV+2GcSTEU+yllwsDpP6zDSPFRSRKq9GcqV5ooN7Np6a6Kv0Hlgy4mfmbzNA9zlz1q71oz6+OixepLddGt12sCQGhxCtA1pkRbC3Fh+3DeyiL4wzHS/C+ne0dXkIizhuGnanF/ANthLtZ9Nu0I/t6xsLEvjSh2SGkITGBc/qkpVfECQQD4UqiBmixwHeRH4iGgQdV/cs2waYukyNxT0mM8uKu/6JCpvWXno6bGmP7z3lqUGE2+YvsZl3NM97acj03CQzC6";
+NSString * const partner = @"";
+NSString * const seller = @"";
+NSString * const privateKey = @"";
 
-/////////////////////////////  微信支付 /////////////////////////////////////
-//// 商户号
-//NSString *const mch_id = @"1267040901";
-//// Api 密钥
-//NSString *const api_key = @"xozaa1234567890xozaa0987654321aa";
-
-
+ 
 @implementation Product
 
 @end
