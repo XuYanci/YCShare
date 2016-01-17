@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-N0-FGw">
+                                <rect key="frame" x="20" y="40" width="60" height="30"/>
+                                <state key="normal" title="微信登录"/>
+                                <connections>
+                                    <action selector="WeChatLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhA-d2-QDN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZn-Ee-5PB">
+                                <rect key="frame" x="20" y="90" width="60" height="30"/>
+                                <state key="normal" title="微博登录"/>
+                                <connections>
+                                    <action selector="WeiBoLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77D-DS-HbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-0c-raY">
+                                <rect key="frame" x="24" y="140" width="53" height="30"/>
+                                <state key="normal" title="QQ登录"/>
+                                <connections>
+                                    <action selector="QQLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugs-KD-3T4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ir-Fz-Scp">
+                                <rect key="frame" x="100" y="40" width="105" height="30"/>
+                                <state key="normal" title="微信联系人分享"/>
+                                <connections>
+                                    <action selector="WeChatShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hql-yE-8xD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS1-x9-wc9">
+                                <rect key="frame" x="103" y="140" width="98" height="30"/>
+                                <state key="normal" title="QQ联系人分享"/>
+                                <connections>
+                                    <action selector="QQShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMo-92-9Hj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orZ-Sr-m7v">
+                                <rect key="frame" x="100" y="90" width="105" height="30"/>
+                                <state key="normal" title="微信朋友圈分享"/>
+                                <connections>
+                                    <action selector="WeChatFriendCycleShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5g4-tR-pMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7P-xL-xhS">
+                                <rect key="frame" x="122" y="240" width="60" height="30"/>
+                                <state key="normal" title="微博分享"/>
+                                <connections>
+                                    <action selector="WeiBOShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6pV-Gv-qgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoD-Ic-dtP">
+                                <rect key="frame" x="225" y="40" width="60" height="30"/>
+                                <state key="normal" title="微信支付"/>
+                                <connections>
+                                    <action selector="WeChatPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivb-Pz-d6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY7-G8-os9">
+                                <rect key="frame" x="217.5" y="90" width="75" height="30"/>
+                                <state key="normal" title="支付宝支付"/>
+                                <connections>
+                                    <action selector="AliPay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LR9-zr-4aZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-rV-JEw">
+                                <rect key="frame" x="114" y="190" width="76" height="30"/>
+                                <state key="normal" title="QZone分享"/>
+                                <connections>
+                                    <action selector="QQZoneShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzD-9S-xzL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yZn-Ee-5PB" firstAttribute="centerX" secondItem="Joe-N0-FGw" secondAttribute="centerX" id="39P-nd-pmZ"/>
+                            <constraint firstItem="2Ir-Fz-Scp" firstAttribute="leading" secondItem="Joe-N0-FGw" secondAttribute="trailing" constant="20" id="8DA-aE-87P"/>
+                            <constraint firstItem="orZ-Sr-m7v" firstAttribute="top" secondItem="2Ir-Fz-Scp" secondAttribute="bottom" constant="20" id="Bo5-UL-tvc"/>
+                            <constraint firstItem="P2j-0c-raY" firstAttribute="centerX" secondItem="yZn-Ee-5PB" secondAttribute="centerX" id="CmE-96-Mke"/>
+                            <constraint firstItem="l7P-xL-xhS" firstAttribute="centerX" secondItem="c1K-rV-JEw" secondAttribute="centerX" id="Dfz-wC-b25"/>
+                            <constraint firstItem="KS1-x9-wc9" firstAttribute="centerX" secondItem="orZ-Sr-m7v" secondAttribute="centerX" id="EaB-x2-aqq"/>
+                            <constraint firstItem="YoD-Ic-dtP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="EiX-A5-iEA"/>
+                            <constraint firstItem="orZ-Sr-m7v" firstAttribute="centerX" secondItem="2Ir-Fz-Scp" secondAttribute="centerX" id="IkN-pl-beq"/>
+                            <constraint firstItem="rY7-G8-os9" firstAttribute="centerX" secondItem="YoD-Ic-dtP" secondAttribute="centerX" id="N1g-qm-e9R"/>
+                            <constraint firstItem="rY7-G8-os9" firstAttribute="top" secondItem="YoD-Ic-dtP" secondAttribute="bottom" constant="20" id="VFw-AZ-Zbs"/>
+                            <constraint firstItem="2Ir-Fz-Scp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cgT-39-6k9"/>
+                            <constraint firstItem="KS1-x9-wc9" firstAttribute="top" secondItem="orZ-Sr-m7v" secondAttribute="bottom" constant="20" id="g2n-zU-MaO"/>
+                            <constraint firstItem="l7P-xL-xhS" firstAttribute="top" secondItem="c1K-rV-JEw" secondAttribute="bottom" constant="20" id="g4N-EQ-qQW"/>
+                            <constraint firstItem="Joe-N0-FGw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gH7-Vo-THN"/>
+                            <constraint firstItem="P2j-0c-raY" firstAttribute="top" secondItem="yZn-Ee-5PB" secondAttribute="bottom" constant="20" id="jPN-Oc-2eM"/>
+                            <constraint firstItem="c1K-rV-JEw" firstAttribute="centerX" secondItem="KS1-x9-wc9" secondAttribute="centerX" id="jSW-1F-RL8"/>
+                            <constraint firstItem="yZn-Ee-5PB" firstAttribute="top" secondItem="Joe-N0-FGw" secondAttribute="bottom" constant="20" id="q72-8i-2J2"/>
+                            <constraint firstItem="Joe-N0-FGw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="rMt-q0-NQl"/>
+                            <constraint firstItem="c1K-rV-JEw" firstAttribute="top" secondItem="KS1-x9-wc9" secondAttribute="bottom" constant="20" id="u99-2E-UZV"/>
+                            <constraint firstItem="YoD-Ic-dtP" firstAttribute="leading" secondItem="2Ir-Fz-Scp" secondAttribute="trailing" constant="20" id="uI6-xg-n9d"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396.5" y="324.5"/>
+        </scene>
+    </scenes>
+</document>
