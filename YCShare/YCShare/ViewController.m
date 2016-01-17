@@ -163,7 +163,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - delegate
+#pragma mark - MXThirdPartyLoginDelegate
 - (void)sendWXAuthRequestReponse:(BaseResp *)resp {
     SendAuthResp *_resp = (SendAuthResp *)resp;
     if (_resp.errCode != 0) { NSLog(@"ERROR"); return; }
@@ -267,4 +267,30 @@
         NSLog(@"分享失败");
     }
 }
+
+#pragma mark - MXThirdPartyPayDelegate
+- (void)sendWXPayRequestResponse:(BaseResp *)resp {
+    if (resp.errCode != WXSuccess) {
+        NSLog(@"充值失败"); return;
+    }
+    
+    NSLog(@"充值成功");
+}
+
+/*! 
+@note:
+    9000	订单支付成功
+    8000	正在处理中
+    4000	订单支付失败
+    6001	用户中途取消
+    6002	网络连接出错
+ */
+- (void)sendAliPayRequestResponse:(NSDictionary *)resp {
+    NSString *resultStatus = [resp objectForKey:@"resultStatus"];
+    if (resultStatus.intValue != 9000) {
+        NSLog(@"充值失败"); return;
+    }
+    NSLog(@"充值成功");
+}
+
 @end
