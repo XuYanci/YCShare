@@ -2,6 +2,14 @@
 
 I Think You Can Know About How To Use It !
 
+/*! Access Token CallBack */
+
+typedef void (^TPAccessTokenCallback)(NSInteger error,id result); 
+
+/*! Access UserInfo CallBack */
+
+typedef void (^TPUserInfoCallback)(NSInteger error,id result);
+
 @protocol MXThirdPartyLoginDelegate
 - (void)sendWXAuthRequestReponse:(BaseResp *)resp;
 - (void)sendWXContentReponse:(BaseResp *)resp;
@@ -16,8 +24,7 @@ I Think You Can Know About How To Use It !
 - (void)sendAliPayRequestResponse:(NSDictionary *)resp;
 @end
 
-typedef void (^TPAccessTokenCallback)(NSInteger error,id result);
-typedef void (^TPUserInfoCallback)(NSInteger error,id result);
+
 
 @interface MXThridPartyLogIn : NSObject<WXApiDelegate,TencentSessionDelegate>
 @property (nonatomic,weak)id <MXThirdPartyLoginDelegate,MXThirdPartyPayDelegate>delegate;
