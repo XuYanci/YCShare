@@ -6,14 +6,12 @@
 //  Copyright (c) 2015年 XuYanci. All rights reserved.
 //
 
-#import "MXThridPartyLogIn.h"
-#import <AlipaySDK/AlipaySDK.h>
+#import "YCShare.h"
 #import "AppDelegate.h"
-#import "Global.h"
 #import "WBHttpRequest+WeiboUser.h"
-#import "WeiboSDK.h"
 #import "DataSigner.h"
 #import "payRequsestHandler.h"
+
 
 //////////////////////////////// 支付宝 ////////////////////////////////////
 NSString * const partner = @"";
@@ -85,7 +83,7 @@ NSString * const privateKey = @"";
 @end
 
 
-@implementation MXThridPartyLogIn {
+@implementation YCShare {
     TencentOAuth *tencentOAuth;
 }
 
@@ -103,20 +101,9 @@ NSString * const privateKey = @"";
     return true;
 }
 
-- (void)changeRegisterApi:(BOOL)isLogin {
-    if (isLogin) {
-        // 注册微信登录AppID
-        [WXApi registerApp:MX_WEIXIN_APP_ID_LOGIN withDescription:@"com.weixin_login"];
-    }
-    else {
-        // 注册微信AppID
-        [WXApi registerApp:MX_WEIXIN_APP_ID withDescription:@"com.weixin"];
-        
-    }
-}
 
 
-+ (MXThridPartyLogIn *)shareInstance {
++ (YCShare *)shareInstance {
     static dispatch_once_t pred = 0;
     __strong static id _sharedObject = nil;
     dispatch_once(&pred, ^{
@@ -138,7 +125,7 @@ NSString * const privateKey = @"";
         return -2;
     }
     
-    [self changeRegisterApi:TRUE];
+    [WXApi registerApp:MX_WEIXIN_APP_ID withDescription:@"com.weixin"];
  
     SendAuthReq* req =[[SendAuthReq alloc ] init];
     req.scope = @"snsapi_userinfo";
@@ -149,9 +136,6 @@ NSString * const privateKey = @"";
 }
 
 - (void)getWXAccessToken:(NSString *)appID appSecret:(NSString *)appSecret Code:(NSString *)code callback:(TPAccessTokenCallback)callback {
-    
-    [self changeRegisterApi:TRUE];
-    
     NSString *url =[NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=%@&code=%@&grant_type=authorization_code",appID,appSecret,code];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSURL *zoneUrl = [NSURL URLWithString:url];
@@ -164,13 +148,10 @@ NSString * const privateKey = @"";
             }
         });
     });
- 
 }
 
 - (void)getWXUserInfo:(NSString *)openID accessToke:(NSString*)accessToken callback:(TPUserInfoCallback)callback {
-    
-    [self changeRegisterApi:TRUE];
-    
+
     NSString *url =[NSString stringWithFormat:@"https://api.weixin.qq.com/sns/userinfo?access_token=%@&openid=%@",accessToken,openID];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -188,7 +169,7 @@ NSString * const privateKey = @"";
 
 - (void)shareWXContent:(NSString *)imageUrl title:(NSString *)title subTitle:(NSString *)subTitle shareUrl:(NSString *)url scene:(int)scene{
     
-    [self changeRegisterApi:TRUE];
+ 
     
     WXMediaMessage *message = [WXMediaMessage message];
     message.title = title;
@@ -340,7 +321,7 @@ NSString * const privateKey = @"";
     order.productName = product.subject;
     order.productDescription = product.body;
     order.amount = [NSString stringWithFormat:@"%.2f",product.price];
-    order.notifyURL = [NSString stringWithFormat:@"%@/callback.php",MAXER_URL_PREFIX];
+    order.notifyURL = ALIPAY_NOTIFY_URL;
     order.service = @"mobile.securitypay.pay";
     order.paymentType = @"1";
     order.inputCharset = @"utf-8";
@@ -350,8 +331,7 @@ NSString * const privateKey = @"";
 }
 
 - (void)sendWXPayRequest:(NSString*)orderName orderPrice:(NSString *)orderPrice orderNo:(NSString *)orderNo {
-    
-    [self changeRegisterApi:FALSE];
+ 
     
     payRequsestHandler *handler = [[payRequsestHandler alloc]init];
     [handler init:APP_ID mch_id:MCH_ID];

@@ -42,11 +42,6 @@
 // 账号帐户资料
 //更改商户把相关参数后可测试
 
-/*!
- @brief 对应的服务器URL
- @note  回调时候需要使用
- */
-#define MAXER_URL_PREFIX     @""
 //APPID
 #define APP_ID          @""
 //appsecret
@@ -56,7 +51,7 @@
 //商户API密钥，填写相应参数
 #define PARTNER_ID      @""
 //支付结果回调页面
-#define NOTIFY_URL      [NSString stringWithFormat:@"%@/callbackwx.php",MAXER_URL_PREFIX]
+#define NOTIFY_URL      [NSString stringWithFormat:@"%@/callbackwx.php",@""]
 //获取服务器端支付数据地址（商户自定义）
 #define SP_URL          @"http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php"
 

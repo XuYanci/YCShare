@@ -10,9 +10,7 @@
 		AD85E9631C4A411F00135D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9621C4A411F00135D38 /* main.m */; };
 		AD85E9661C4A411F00135D38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9651C4A411F00135D38 /* AppDelegate.m */; };
 		AD85E9691C4A411F00135D38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9681C4A411F00135D38 /* ViewController.m */; };
-		AD85E96C1C4A411F00135D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD85E96A1C4A411F00135D38 /* Main.storyboard */; };
 		AD85E96E1C4A411F00135D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD85E96D1C4A411F00135D38 /* Assets.xcassets */; };
-		AD85E9711C4A411F00135D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD85E96F1C4A411F00135D38 /* LaunchScreen.storyboard */; };
 		AD85E97C1C4A411F00135D38 /* YCShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E97B1C4A411F00135D38 /* YCShareTests.m */; };
 		AD85E9871C4A411F00135D38 /* YCShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9861C4A411F00135D38 /* YCShareUITests.m */; };
 		AD85EA1C1C4A417900135D38 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85E9F81C4A417900135D38 /* libWeiboSDK.a */; };
@@ -43,7 +41,7 @@
 		AD85EB111C4A477D00135D38 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85EB101C4A477D00135D38 /* SystemConfiguration.framework */; };
 		AD85EB131C4A47AB00135D38 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85EB121C4A47AB00135D38 /* CoreTelephony.framework */; };
 		AD85EB151C4A47BC00135D38 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85EB141C4A47BC00135D38 /* CoreMotion.framework */; };
-		AD85EB181C4A4A7400135D38 /* MXThridPartyLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85EB171C4A4A7400135D38 /* MXThridPartyLogIn.m */; };
+		AD85EB181C4A4A7400135D38 /* YCShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85EB171C4A4A7400135D38 /* YCShare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,9 +206,9 @@
 		AD85EB101C4A477D00135D38 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AD85EB121C4A47AB00135D38 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		AD85EB141C4A47BC00135D38 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		AD85EB161C4A4A7400135D38 /* MXThridPartyLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXThridPartyLogIn.h; sourceTree = "<group>"; };
-		AD85EB171C4A4A7400135D38 /* MXThridPartyLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXThridPartyLogIn.m; sourceTree = "<group>"; };
-		AD85EB191C4A4AAD00135D38 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		AD85EB161C4A4A7400135D38 /* YCShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCShare.h; sourceTree = "<group>"; };
+		AD85EB171C4A4A7400135D38 /* YCShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCShare.m; sourceTree = "<group>"; };
+		AD85EB191C4A4AAD00135D38 /* YCShareConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCShareConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,9 +501,9 @@
 		AD85EB1A1C4A4B3100135D38 /* ShareLib */ = {
 			isa = PBXGroup;
 			children = (
-				AD85EB191C4A4AAD00135D38 /* Global.h */,
-				AD85EB161C4A4A7400135D38 /* MXThridPartyLogIn.h */,
-				AD85EB171C4A4A7400135D38 /* MXThridPartyLogIn.m */,
+				AD85EB191C4A4AAD00135D38 /* YCShareConfig.h */,
+				AD85EB161C4A4A7400135D38 /* YCShare.h */,
+				AD85EB171C4A4A7400135D38 /* YCShare.m */,
 			);
 			name = ShareLib;
 			sourceTree = "<group>";
@@ -577,6 +575,8 @@
 				TargetAttributes = {
 					AD85E95D1C4A411F00135D38 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 32URLK6K7Y;
+						ProvisioningStyle = Manual;
 					};
 					AD85E9761C4A411F00135D38 = {
 						CreatedOnToolsVersion = 7.2;
@@ -613,9 +613,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD85E9711C4A411F00135D38 /* LaunchScreen.storyboard in Resources */,
 				AD85E96E1C4A411F00135D38 /* Assets.xcassets in Resources */,
-				AD85E96C1C4A411F00135D38 /* Main.storyboard in Resources */,
 				AD85EA1D1C4A417900135D38 /* WeiboSDK.bundle in Resources */,
 				AD85EA231C4A417900135D38 /* read_me.txt in Resources */,
 			);
@@ -646,7 +644,7 @@
 				AD85EB021C4A43E500135D38 /* MD5DataSigner.m in Sources */,
 				AD85EB011C4A43E500135D38 /* DataVerifier.m in Sources */,
 				AD85EA1F1C4A417900135D38 /* ApiXml.mm in Sources */,
-				AD85EB181C4A4A7400135D38 /* MXThridPartyLogIn.m in Sources */,
+				AD85EB181C4A4A7400135D38 /* YCShare.m in Sources */,
 				AD85EB001C4A43E500135D38 /* DataSigner.m in Sources */,
 				AD85EB031C4A43E500135D38 /* NSDataEx.m in Sources */,
 				AD85E9691C4A411F00135D38 /* ViewController.m in Sources */,
@@ -797,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 32URLK6K7Y;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -813,8 +812,10 @@
 					"$(PROJECT_DIR)/Framework/libWeiboSDK",
 					"$(PROJECT_DIR)/Framework/WeChatSDK_1.5",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.YCShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "63f4c8d8-87d3-4487-be18-e1c4de0be157";
+				PROVISIONING_PROFILE_SPECIFIER = "xsb iOS development";
 			};
 			name = Debug;
 		};
@@ -822,6 +823,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,7 +840,7 @@
 					"$(PROJECT_DIR)/Framework/libWeiboSDK",
 					"$(PROJECT_DIR)/Framework/WeChatSDK_1.5",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxer.YCShare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -910,6 +912,7 @@
 				AD85E98D1C4A411F00135D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD85E98E1C4A411F00135D38 /* Build configuration list for PBXNativeTarget "YCShareTests" */ = {
 			isa = XCConfigurationList;
@@ -918,6 +921,7 @@
 				AD85E9901C4A411F00135D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD85E9911C4A411F00135D38 /* Build configuration list for PBXNativeTarget "YCShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -926,6 +930,7 @@
 				AD85E9931C4A411F00135D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

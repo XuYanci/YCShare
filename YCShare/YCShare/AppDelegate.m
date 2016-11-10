@@ -8,15 +8,11 @@
 
 #import "AppDelegate.h"
 
-/*！导入头文件 QQ , 微信 , 微博 , 支付宝等 */
-#import "WXApi.h"
-#import "WeiboSDK.h"
-#import <AlipaySDK/AlipaySDK.h>
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
-#import "MXThridPartyLogIn.h"
 
-@interface AppDelegate ()
+#import "YCShare.h"
+
+@interface AppDelegate ()<WXApiDelegate,QQApiInterfaceDelegate,WeiboSDKDelegate>
+
 
 @end
 
@@ -95,23 +91,23 @@
  */
 -(void) onResp:(BaseResp*)resp {
     if ([resp isKindOfClass:[SendAuthResp class]]) {
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendWXAuthRequestReponse:resp];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendWXAuthRequestReponse:resp];
         }
     }
     else if([resp isKindOfClass:[SendMessageToWXResp class]]) {
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendWXContentReponse:resp];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendWXContentReponse:resp];
         }
     }
     else if ([resp isKindOfClass:[SendMessageToQQResp class]]) {
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendQQContentResponse:resp];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendQQContentResponse:resp];
         }
     }
     else if([resp isKindOfClass:[PayResp class]]) {
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendWXPayRequestResponse:resp];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendWXPayRequestResponse:resp];
         }
     }
 }
@@ -124,8 +120,8 @@
 - (void)didReceiveWeiboResponse:(WBBaseResponse *)response {
     if ([response isKindOfClass:WBAuthorizeResponse.class])
     {
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendWBAuthRequestReponse:response];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendWBAuthRequestReponse:response];
         }
         
         self.wbtoken = [(WBAuthorizeResponse *)response accessToken];
@@ -144,8 +140,8 @@
             self.wbCurrentUserID = userID;
         }
         
-        if ([MXThridPartyLogIn shareInstance].delegate != nil) {
-            [[MXThridPartyLogIn shareInstance].delegate sendWBContentReponse:sendMessageToWeiboResponse];
+        if ([YCShare shareInstance].delegate != nil) {
+            [[YCShare shareInstance].delegate sendWBContentReponse:sendMessageToWeiboResponse];
         }
     }
 }

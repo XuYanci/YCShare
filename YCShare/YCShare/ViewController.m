@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "Global.h"
-#import "MXThridPartyLogIn.h"
+
+#import "YCShare.h"
 
 @interface ViewController ()<MXThirdPartyLoginDelegate,MXThirdPartyPayDelegate>
 
@@ -19,8 +19,8 @@
 #pragma mark - event response
 /*!微信登陆*/
 - (IBAction)WeChatLogin:(id)sender {
-    int ret = [[MXThridPartyLogIn shareInstance]sendWXAuthRequest];
-    [[MXThridPartyLogIn shareInstance]setDelegate:self];
+    int ret = [[YCShare shareInstance]sendWXAuthRequest];
+    [[YCShare shareInstance]setDelegate:self];
     
     if (ret == -1) {
         NSLog(@"需要安装微信才能使用这功能");
@@ -32,8 +32,8 @@
 
 /*!QQ登陆*/
 - (IBAction)QQLogin:(id)sender {
-    int ret = [[MXThridPartyLogIn shareInstance]sendQQAuthRequest];
-    [[MXThridPartyLogIn shareInstance]setDelegate:self];
+    int ret = [[YCShare shareInstance]sendQQAuthRequest];
+    [[YCShare shareInstance]setDelegate:self];
     
     if (ret == -1) {
         NSLog(@"需要安装QQ才能使用这功能");
@@ -42,8 +42,8 @@
 
 /*!微博登陆*/
 - (IBAction)WeiBoLogin:(id)sender {
-    int ret =  [[MXThridPartyLogIn shareInstance] sendWBAuthRequest];
-    [[MXThridPartyLogIn shareInstance]setDelegate:self];
+    int ret =  [[YCShare shareInstance] sendWBAuthRequest];
+    [[YCShare shareInstance]setDelegate:self];
     if (ret == -1) {
         NSLog(@"微博未安装");
     }
@@ -55,8 +55,8 @@
     NSString *title = @"";
     NSString *sub = @"";
     NSString *share = @"";
-    [MXThridPartyLogIn shareInstance].delegate = self;
-    [[MXThridPartyLogIn shareInstance]shareWXContent:thumb
+    [YCShare shareInstance].delegate = self;
+    [[YCShare shareInstance]shareWXContent:thumb
                                                title:title
                                             subTitle:sub
                                             shareUrl:share scene:0];
@@ -68,8 +68,8 @@
     NSString *title = @"";
     NSString *sub = @"";
     NSString *share = @"";
-    [MXThridPartyLogIn shareInstance].delegate = self;
-    [[MXThridPartyLogIn shareInstance]shareWXContent:thumb
+    [YCShare shareInstance].delegate = self;
+    [[YCShare shareInstance]shareWXContent:thumb
                                                title:title
                                             subTitle:sub
                                             shareUrl:share scene:1];
@@ -81,8 +81,8 @@
     NSString *title = @"";
     NSString *sub = @"";
     NSString *share = @"";
-    [MXThridPartyLogIn shareInstance].delegate = self;
-    int ret =  [[MXThridPartyLogIn shareInstance]shareQQContent:thumb
+    [YCShare shareInstance].delegate = self;
+    int ret =  [[YCShare shareInstance]shareQQContent:thumb
                                                           title:title
                                                        subTitle:sub
                                                        shareUrl:share
@@ -102,8 +102,8 @@
     NSString *title = @"";
     NSString *sub = @"";
     NSString *share = @"";
-    [MXThridPartyLogIn shareInstance].delegate = self;
-    int ret =   [[MXThridPartyLogIn shareInstance]shareQQContent:thumb
+    [YCShare shareInstance].delegate = self;
+    int ret =   [[YCShare shareInstance]shareQQContent:thumb
                                                            title:title
                                                         subTitle:sub
                                                         shareUrl:share where:1];
@@ -122,8 +122,8 @@
     NSString *title = @"";
     NSString *sub = @"";
     NSString *share = @"";
-    [MXThridPartyLogIn shareInstance].delegate = self;
-    [[MXThridPartyLogIn shareInstance]shareWBContent:thumb
+    [YCShare shareInstance].delegate = self;
+    [[YCShare shareInstance]shareWBContent:thumb
                                                title:title
                                             subTitle:sub
                                             shareUrl:share];
@@ -134,8 +134,8 @@
     NSString *orderNo = @"";
     NSString *title = @"";
     NSString *cash = @"";
-    [[MXThridPartyLogIn shareInstance]sendWXPayRequest:title orderPrice:cash orderNo:orderNo];
-    [[MXThridPartyLogIn shareInstance]setDelegate:self];
+    [[YCShare shareInstance]sendWXPayRequest:title orderPrice:cash orderNo:orderNo];
+    [[YCShare shareInstance]setDelegate:self];
 }
 
 /*!支付宝支付*/
@@ -148,8 +148,8 @@
     product.body = title;
     product.price = cash.intValue;
     product.orderId = orderNo;
-    [[MXThridPartyLogIn shareInstance]sendAliPayRequest:product];
-    [[MXThridPartyLogIn shareInstance]setDelegate:self];
+    [[YCShare shareInstance]sendAliPayRequest:product];
+    [[YCShare shareInstance]setDelegate:self];
 }
 
 #pragma mark -- life cycle
@@ -170,8 +170,8 @@
     
     NSString *code = _resp.code;
     // ... 获取AccessToken
-    [[MXThridPartyLogIn shareInstance]getWXAccessToken:MX_WEIXIN_APP_ID_LOGIN
-                                             appSecret:MX_WEIXIN_APP_ID_LOGIN_SECRET
+    [[YCShare shareInstance]getWXAccessToken:MX_WEIXIN_APP_ID
+                                             appSecret:MX_WEIXIN_APP_SECRET
                                                   Code:code
                                               callback:^(NSInteger error, id result)
     {
@@ -180,7 +180,7 @@
             NSString *openid = [dict objectForKey:@"openid"];
             NSString *accesstoken = [dict objectForKey:@"access_token"];
             // ... 获取用户信息
-            [[MXThridPartyLogIn shareInstance]getWXUserInfo:openid accessToke:accesstoken callback:^(NSInteger error, id result) {
+            [[YCShare shareInstance]getWXUserInfo:openid accessToke:accesstoken callback:^(NSInteger error, id result) {
                 NSDictionary *userInfoDict = (NSDictionary *)result;
                 NSLog(@"USERINFO = %@",userInfoDict);
             }];
@@ -211,7 +211,7 @@
     NSString *openID = auth.openId;
     NSString *appID = auth.appId;
 
-    [[MXThridPartyLogIn shareInstance]getQQUserInfo:openID
+    [[YCShare shareInstance]getQQUserInfo:openID
                                         accessToken:accessToken
                                                 key:appID
                                            callback:^(NSInteger error, id result)
@@ -246,7 +246,7 @@
     
     NSString *accessToken = [(WBAuthorizeResponse *)response accessToken];
     NSString *userID = [(WBAuthorizeResponse *)response userID];
-    [[MXThridPartyLogIn shareInstance] getWBUserInfo:MAX_SINA_WEIBO_APP_ID
+    [[YCShare shareInstance] getWBUserInfo:MAX_SINA_WEIBO_APP_ID
                                          accessToken:accessToken
                                                  uid:userID
                                          screen_name:@""

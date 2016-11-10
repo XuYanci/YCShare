@@ -11,7 +11,8 @@
 #import "WeiboSDK.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/QQApiInterface.h>
-
+#import <AlipaySDK/AlipaySDK.h>
+#import "YCShareConfig.h"
 
 @interface Product : NSObject{
 @private
@@ -70,10 +71,10 @@
 typedef void (^TPAccessTokenCallback)(NSInteger error,id result);
 typedef void (^TPUserInfoCallback)(NSInteger error,id result);
 
-@interface MXThridPartyLogIn : NSObject<WXApiDelegate,TencentSessionDelegate>
+@interface YCShare : NSObject<WXApiDelegate,TencentSessionDelegate>
 @property (nonatomic,weak)id <MXThirdPartyLoginDelegate,MXThirdPartyPayDelegate>delegate;
 
-+ (MXThridPartyLogIn *)shareInstance;
++ (YCShare *)shareInstance;
 
 // 微信是否安装
 - (BOOL)isWXInstall;
