@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kgR-lQ-9Oj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zuR-gY-Wch">
+            <objects>
+                <viewController id="kgR-lQ-9Oj" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iwn-GV-31I"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHV-Tp-U8h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jMD-mr-Kt5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-qm-xGy">
+                                <state key="normal" title="微信登录"/>
+                                <connections>
+                                    <action selector="WeChatLogin:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="wc1-uC-HFm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeJ-kC-haX">
+                                <state key="normal" title="微博登录"/>
+                                <connections>
+                                    <action selector="WeiBoLogin:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="Fu7-00-DVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqY-MH-uTc">
+                                <state key="normal" title="QQ登录"/>
+                                <connections>
+                                    <action selector="QQLogin:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="LZI-nb-zpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85C-Ry-SQj">
+                                <state key="normal" title="微信联系人分享"/>
+                                <connections>
+                                    <action selector="WeChatShare:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="9Ox-sL-jhN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0h-eS-ENx">
+                                <state key="normal" title="QQ联系人分享"/>
+                                <connections>
+                                    <action selector="QQShare:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="5SG-Dy-LFR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvU-Bl-wAb">
+                                <state key="normal" title="微信朋友圈分享"/>
+                                <connections>
+                                    <action selector="WeChatFriendCycleShare:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="gO4-K0-NHx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zor-VH-zQH">
+                                <state key="normal" title="微博分享"/>
+                                <connections>
+                                    <action selector="WeiBOShare:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="NbM-TJ-d2N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgc-iA-kdB">
+                                <state key="normal" title="微信支付"/>
+                                <connections>
+                                    <action selector="WeChatPay:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="BcN-Vk-oWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivH-AD-v3V">
+                                <state key="normal" title="支付宝支付"/>
+                                <connections>
+                                    <action selector="AliPay:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="f2U-my-l0q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcj-9R-6tF">
+                                <state key="normal" title="QZone分享"/>
+                                <connections>
+                                    <action selector="QQZoneShare:" destination="kgR-lQ-9Oj" eventType="touchUpInside" id="FsE-Dh-BN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="85C-Ry-SQj" firstAttribute="top" secondItem="iwn-GV-31I" secondAttribute="bottom" constant="20" id="0N2-Bq-1ZN"/>
+                            <constraint firstItem="Zor-VH-zQH" firstAttribute="centerX" secondItem="jcj-9R-6tF" secondAttribute="centerX" id="0aM-cN-vTj"/>
+                            <constraint firstItem="Xgc-iA-kdB" firstAttribute="top" secondItem="iwn-GV-31I" secondAttribute="bottom" constant="20" id="2uD-IX-YIw"/>
+                            <constraint firstItem="gqY-MH-uTc" firstAttribute="centerX" secondItem="GeJ-kC-haX" secondAttribute="centerX" id="3fm-q9-vm1"/>
+                            <constraint firstItem="GeJ-kC-haX" firstAttribute="top" secondItem="0hW-qm-xGy" secondAttribute="bottom" constant="20" id="438-Y6-rvu"/>
+                            <constraint firstItem="0hW-qm-xGy" firstAttribute="leading" secondItem="jMD-mr-Kt5" secondAttribute="leading" constant="20" id="7rD-N7-4YQ"/>
+                            <constraint firstItem="W0h-eS-ENx" firstAttribute="centerX" secondItem="GvU-Bl-wAb" secondAttribute="centerX" id="AZ0-G7-QqK"/>
+                            <constraint firstItem="GvU-Bl-wAb" firstAttribute="centerX" secondItem="85C-Ry-SQj" secondAttribute="centerX" id="Cz6-Y7-uGG"/>
+                            <constraint firstItem="GvU-Bl-wAb" firstAttribute="top" secondItem="85C-Ry-SQj" secondAttribute="bottom" constant="20" id="Da7-LL-rVF"/>
+                            <constraint firstItem="Xgc-iA-kdB" firstAttribute="leading" secondItem="85C-Ry-SQj" secondAttribute="trailing" constant="20" id="Lzp-kd-vLe"/>
+                            <constraint firstItem="85C-Ry-SQj" firstAttribute="leading" secondItem="0hW-qm-xGy" secondAttribute="trailing" constant="20" id="TcH-Yj-a7g"/>
+                            <constraint firstItem="gqY-MH-uTc" firstAttribute="top" secondItem="GeJ-kC-haX" secondAttribute="bottom" constant="20" id="cte-eg-wgS"/>
+                            <constraint firstItem="Zor-VH-zQH" firstAttribute="top" secondItem="jcj-9R-6tF" secondAttribute="bottom" constant="20" id="ftj-eo-m5r"/>
+                            <constraint firstItem="ivH-AD-v3V" firstAttribute="centerX" secondItem="Xgc-iA-kdB" secondAttribute="centerX" id="igk-wM-uqd"/>
+                            <constraint firstItem="jcj-9R-6tF" firstAttribute="centerX" secondItem="W0h-eS-ENx" secondAttribute="centerX" id="p2b-fe-Y6q"/>
+                            <constraint firstItem="0hW-qm-xGy" firstAttribute="top" secondItem="iwn-GV-31I" secondAttribute="bottom" constant="20" id="pwJ-UW-J43"/>
+                            <constraint firstItem="ivH-AD-v3V" firstAttribute="top" secondItem="Xgc-iA-kdB" secondAttribute="bottom" constant="20" id="rAf-A7-HfJ"/>
+                            <constraint firstItem="jcj-9R-6tF" firstAttribute="top" secondItem="W0h-eS-ENx" secondAttribute="bottom" constant="20" id="vfp-NQ-U2n"/>
+                            <constraint firstItem="GeJ-kC-haX" firstAttribute="centerX" secondItem="0hW-qm-xGy" secondAttribute="centerX" id="wHI-N4-vUm"/>
+                            <constraint firstItem="W0h-eS-ENx" firstAttribute="top" secondItem="GvU-Bl-wAb" secondAttribute="bottom" constant="20" id="yf5-Rk-2M6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bd-9e-juc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="262"/>
+        </scene>
+    </scenes>
+</document>

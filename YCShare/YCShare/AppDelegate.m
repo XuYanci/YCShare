@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-
-
 #import "YCShare.h"
 
 @interface AppDelegate ()<WXApiDelegate,QQApiInterfaceDelegate,WeiboSDKDelegate>
@@ -21,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WXApi registerApp:MX_WEIXIN_APP_ID withDescription:@"com.weixin"];
     return YES;
 }
 

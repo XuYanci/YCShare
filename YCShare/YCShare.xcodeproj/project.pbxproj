@@ -42,6 +42,9 @@
 		AD85EB131C4A47AB00135D38 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85EB121C4A47AB00135D38 /* CoreTelephony.framework */; };
 		AD85EB151C4A47BC00135D38 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD85EB141C4A47BC00135D38 /* CoreMotion.framework */; };
 		AD85EB181C4A4A7400135D38 /* YCShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85EB171C4A4A7400135D38 /* YCShare.m */; };
+		ADC124B31DD4BA63005B3C28 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC124B21DD4BA63005B3C28 /* ImageIO.framework */; };
+		ADC124B51DD4BA81005B3C28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */; };
+		ADC124B91DD4BB39005B3C28 /* MainYC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,6 @@
 		AD85E9651C4A411F00135D38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AD85E9671C4A411F00135D38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD85E9681C4A411F00135D38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AD85E96B1C4A411F00135D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD85E96D1C4A411F00135D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD85E9701C4A411F00135D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD85E9721C4A411F00135D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -209,6 +211,9 @@
 		AD85EB161C4A4A7400135D38 /* YCShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCShare.h; sourceTree = "<group>"; };
 		AD85EB171C4A4A7400135D38 /* YCShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCShare.m; sourceTree = "<group>"; };
 		AD85EB191C4A4AAD00135D38 /* YCShareConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCShareConfig.h; sourceTree = "<group>"; };
+		ADC124B21DD4BA63005B3C28 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainYC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +221,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC124B51DD4BA81005B3C28 /* CFNetwork.framework in Frameworks */,
+				ADC124B31DD4BA63005B3C28 /* ImageIO.framework in Frameworks */,
 				AD85EB151C4A47BC00135D38 /* CoreMotion.framework in Frameworks */,
 				AD85EB131C4A47AB00135D38 /* CoreTelephony.framework in Frameworks */,
 				AD85EB111C4A477D00135D38 /* SystemConfiguration.framework in Frameworks */,
@@ -267,6 +274,7 @@
 				AD85E97A1C4A411F00135D38 /* YCShareTests */,
 				AD85E9851C4A411F00135D38 /* YCShareUITests */,
 				AD85E95F1C4A411F00135D38 /* Products */,
+				ADC124B11DD4BA62005B3C28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,12 +296,12 @@
 				AD85E9651C4A411F00135D38 /* AppDelegate.m */,
 				AD85E9671C4A411F00135D38 /* ViewController.h */,
 				AD85E9681C4A411F00135D38 /* ViewController.m */,
-				AD85E96A1C4A411F00135D38 /* Main.storyboard */,
 				AD85E96D1C4A411F00135D38 /* Assets.xcassets */,
 				AD85E96F1C4A411F00135D38 /* LaunchScreen.storyboard */,
 				AD85E9721C4A411F00135D38 /* Info.plist */,
 				AD85E9941C4A417900135D38 /* Framework */,
 				AD85E9611C4A411F00135D38 /* Supporting Files */,
+				ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */,
 			);
 			path = YCShare;
 			sourceTree = "<group>";
@@ -508,6 +516,15 @@
 			name = ShareLib;
 			sourceTree = "<group>";
 		};
+		ADC124B11DD4BA62005B3C28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */,
+				ADC124B21DD4BA63005B3C28 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +630,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC124B91DD4BB39005B3C28 /* MainYC.storyboard in Resources */,
 				AD85E96E1C4A411F00135D38 /* Assets.xcassets in Resources */,
 				AD85EA1D1C4A417900135D38 /* WeiboSDK.bundle in Resources */,
 				AD85EA231C4A417900135D38 /* read_me.txt in Resources */,
@@ -690,14 +708,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD85E96A1C4A411F00135D38 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD85E96B1C4A411F00135D38 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD85E96F1C4A411F00135D38 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -748,6 +758,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -785,6 +796,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
