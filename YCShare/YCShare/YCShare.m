@@ -169,8 +169,6 @@ NSString * const privateKey = @"";
 
 - (void)shareWXContent:(NSString *)imageUrl title:(NSString *)title subTitle:(NSString *)subTitle shareUrl:(NSString *)url scene:(int)scene{
     
- 
-    
     WXMediaMessage *message = [WXMediaMessage message];
     message.title = title;
     message.description = subTitle;

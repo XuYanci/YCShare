@@ -11,7 +11,6 @@
 
 @interface AppDelegate ()<WXApiDelegate,QQApiInterfaceDelegate,WeiboSDKDelegate>
 
-
 @end
 
 @implementation AppDelegate
@@ -48,27 +47,27 @@
 
 #pragma mark -- 第三方登录
 
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    NSLog(@"---- handle open url%@",[UIPasteboard generalPasteboard].string);
     return [WXApi handleOpenURL:url delegate:self]
-    || [TencentOAuth HandleOpenURL:url]
-    || [QQApiInterface handleOpenURL:url delegate:self]
-    || [WeiboSDK handleOpenURL:url delegate:self];
-    
+   ;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    
-    // 支付宝支付回调接口
-    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-        
-    }];
-    
+-(BOOL)application:(UIApplication *)application
+           openURL:(NSURL *)url
+ sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"----  handle open url %@",[UIPasteboard generalPasteboard].string);
     return [WXApi handleOpenURL:url delegate:self]
-    || [TencentOAuth HandleOpenURL:url]
-    || [QQApiInterface handleOpenURL:url delegate:self]
-    || [WeiboSDK handleOpenURL:url delegate:self];
+    ;
 }
 
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    NSLog(@"---- handle open url %@",[UIPasteboard generalPasteboard].string);
+    return [WXApi handleOpenURL:url delegate:self];
+}
 #pragma mark --
 #pragma mark WXApiDelegate
 

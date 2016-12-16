@@ -19,8 +19,8 @@
 #define MX_QQ_APP_KEY                   @""
 
 /*! 微信配置相关 */
-#define MX_WEIXIN_APP_ID                @""
-#define MX_WEIXIN_APP_SECRET            @""
+#define MX_WEIXIN_APP_ID                @"wxd63462096dcf10c9"
+#define MX_WEIXIN_APP_SECRET            @"e8c2a3ed3b6882911f7c6370bdfb461c"
 
 /*! 支付宝支付配置相关 */
 #define ALIPAY_NOTIFY_URL               @""

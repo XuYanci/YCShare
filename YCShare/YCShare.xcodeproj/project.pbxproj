@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD41E4D51DD5A8EF00E3AFDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD41E4D41DD5A8EF00E3AFDE /* Info.plist */; };
 		AD85E9631C4A411F00135D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9621C4A411F00135D38 /* main.m */; };
 		AD85E9661C4A411F00135D38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9651C4A411F00135D38 /* AppDelegate.m */; };
 		AD85E9691C4A411F00135D38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85E9681C4A411F00135D38 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		ADC124B31DD4BA63005B3C28 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC124B21DD4BA63005B3C28 /* ImageIO.framework */; };
 		ADC124B51DD4BA81005B3C28 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */; };
 		ADC124B91DD4BB39005B3C28 /* MainYC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */; };
+		ADC4B7551DD56DE5004C4B15 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC4B7541DD56DE5004C4B15 /* PassKit.framework */; };
+		D35D6EBBA8CB0A791F5F1C51 /* libPods-YCShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F88E578808F9FFF5720F776 /* libPods-YCShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F88E578808F9FFF5720F776 /* libPods-YCShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YCShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FE03EC0EEB640073F9AD9B /* Pods-YCShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-YCShare/Pods-YCShare.release.xcconfig"; sourceTree = "<group>"; };
+		AD41E4D31DD5A79200E3AFDE /* YCShare copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "YCShare copy-Info.plist"; path = "/Users/yanci/Desktop/Yanci/YanciXuOwnRearch/YCSHare/YCShare/YCShare copy-Info.plist"; sourceTree = "<absolute>"; };
+		AD41E4D41DD5A8EF00E3AFDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD85E95E1C4A411F00135D38 /* YCShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD85E9621C4A411F00135D38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD85E9641C4A411F00135D38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,7 +80,6 @@
 		AD85E9681C4A411F00135D38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD85E96D1C4A411F00135D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD85E9701C4A411F00135D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD85E9721C4A411F00135D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD85E9771C4A411F00135D38 /* YCShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD85E97B1C4A411F00135D38 /* YCShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCShareTests.m; sourceTree = "<group>"; };
 		AD85E97D1C4A411F00135D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,6 +220,9 @@
 		ADC124B21DD4BA63005B3C28 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainYC.storyboard; sourceTree = "<group>"; };
+		ADC4B7531DD56DE5004C4B15 /* YCShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YCShare.entitlements; sourceTree = "<group>"; };
+		ADC4B7541DD56DE5004C4B15 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		D85B1D624D88719349FE7352 /* Pods-YCShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YCShare/Pods-YCShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,9 +244,11 @@
 				AD85EA941C4A42A000135D38 /* libc++.1.tbd in Frameworks */,
 				AD85EA921C4A429A00135D38 /* libxml2.tbd in Frameworks */,
 				AD85EA1E1C4A417900135D38 /* TencentOpenAPI.framework in Frameworks */,
+				ADC4B7551DD56DE5004C4B15 /* PassKit.framework in Frameworks */,
 				AD85EA221C4A417900135D38 /* libWeChatSDK.a in Frameworks */,
 				AD85EA1C1C4A417900135D38 /* libWeiboSDK.a in Frameworks */,
 				AD85EAFD1C4A43E500135D38 /* libcrypto.a in Frameworks */,
+				D35D6EBBA8CB0A791F5F1C51 /* libPods-YCShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78967BA623C58DD2EFFF7946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D85B1D624D88719349FE7352 /* Pods-YCShare.debug.xcconfig */,
+				60FE03EC0EEB640073F9AD9B /* Pods-YCShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD85E9551C4A411F00135D38 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +295,8 @@
 				AD85E9851C4A411F00135D38 /* YCShareUITests */,
 				AD85E95F1C4A411F00135D38 /* Products */,
 				ADC124B11DD4BA62005B3C28 /* Frameworks */,
+				78967BA623C58DD2EFFF7946 /* Pods */,
+				AD41E4D31DD5A79200E3AFDE /* YCShare copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -291,6 +313,7 @@
 		AD85E9601C4A411F00135D38 /* YCShare */ = {
 			isa = PBXGroup;
 			children = (
+				ADC4B7531DD56DE5004C4B15 /* YCShare.entitlements */,
 				AD85EB1A1C4A4B3100135D38 /* ShareLib */,
 				AD85E9641C4A411F00135D38 /* AppDelegate.h */,
 				AD85E9651C4A411F00135D38 /* AppDelegate.m */,
@@ -298,7 +321,7 @@
 				AD85E9681C4A411F00135D38 /* ViewController.m */,
 				AD85E96D1C4A411F00135D38 /* Assets.xcassets */,
 				AD85E96F1C4A411F00135D38 /* LaunchScreen.storyboard */,
-				AD85E9721C4A411F00135D38 /* Info.plist */,
+				AD41E4D41DD5A8EF00E3AFDE /* Info.plist */,
 				AD85E9941C4A417900135D38 /* Framework */,
 				AD85E9611C4A411F00135D38 /* Supporting Files */,
 				ADC124B81DD4BB39005B3C28 /* MainYC.storyboard */,
@@ -519,8 +542,10 @@
 		ADC124B11DD4BA62005B3C28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ADC4B7541DD56DE5004C4B15 /* PassKit.framework */,
 				ADC124B41DD4BA81005B3C28 /* CFNetwork.framework */,
 				ADC124B21DD4BA63005B3C28 /* ImageIO.framework */,
+				4F88E578808F9FFF5720F776 /* libPods-YCShare.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -532,9 +557,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD85E98B1C4A411F00135D38 /* Build configuration list for PBXNativeTarget "YCShare" */;
 			buildPhases = (
+				444ABAC6F7678502E9E31ADE /* [CP] Check Pods Manifest.lock */,
 				AD85E95A1C4A411F00135D38 /* Sources */,
 				AD85E95B1C4A411F00135D38 /* Frameworks */,
 				AD85E95C1C4A411F00135D38 /* Resources */,
+				29E54E9FBF0B759CFDC1E596 /* [CP] Embed Pods Frameworks */,
+				AE0F78ADE65C5C1625A99CC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -594,6 +622,14 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 32URLK6K7Y;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+						};
 					};
 					AD85E9761C4A411F00135D38 = {
 						CreatedOnToolsVersion = 7.2;
@@ -633,6 +669,7 @@
 				ADC124B91DD4BB39005B3C28 /* MainYC.storyboard in Resources */,
 				AD85E96E1C4A411F00135D38 /* Assets.xcassets in Resources */,
 				AD85EA1D1C4A417900135D38 /* WeiboSDK.bundle in Resources */,
+				AD41E4D51DD5A8EF00E3AFDE /* Info.plist in Resources */,
 				AD85EA231C4A417900135D38 /* read_me.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +689,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29E54E9FBF0B759CFDC1E596 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YCShare/Pods-YCShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		444ABAC6F7678502E9E31ADE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0F78ADE65C5C1625A99CC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YCShare/Pods-YCShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD85E95A1C4A411F00135D38 /* Sources */ = {
@@ -805,8 +890,10 @@
 		};
 		AD85E98C1C4A411F00135D38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85B1D624D88719349FE7352 /* Pods-YCShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YCShare/YCShare.entitlements;
 				DEVELOPMENT_TEAM = 32URLK6K7Y;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -817,6 +904,7 @@
 				GCC_PREFIX_HEADER = YCShare/YCShare.pch;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/AliPay";
 				INFOPLIST_FILE = YCShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -824,6 +912,7 @@
 					"$(PROJECT_DIR)/Framework/libWeiboSDK",
 					"$(PROJECT_DIR)/Framework/WeChatSDK_1.5",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "63f4c8d8-87d3-4487-be18-e1c4de0be157";
@@ -833,8 +922,10 @@
 		};
 		AD85E98D1C4A411F00135D38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FE03EC0EEB640073F9AD9B /* Pods-YCShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YCShare/YCShare.entitlements;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -845,6 +936,7 @@
 				GCC_PREFIX_HEADER = YCShare/YCShare.pch;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Framework/AliPay";
 				INFOPLIST_FILE = YCShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -852,6 +944,7 @@
 					"$(PROJECT_DIR)/Framework/libWeiboSDK",
 					"$(PROJECT_DIR)/Framework/WeChatSDK_1.5",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.star.xsb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

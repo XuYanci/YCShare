@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>YCShare copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>YCShare.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AD41E4A21DD5A79200E3AFDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AD85E95D1C4A411F00135D38</key>
 		<dict>
 			<key>primary</key>

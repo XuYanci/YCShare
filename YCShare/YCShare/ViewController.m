@@ -10,6 +10,9 @@
 
 #import "YCShare.h"
 
+
+
+
 @interface ViewController ()<MXThirdPartyLoginDelegate,MXThirdPartyPayDelegate>
 
 @end
@@ -64,15 +67,18 @@
 
 /*!微信朋友圈分享*/
 - (IBAction)WeChatFriendCycleShare:(id)sender {
-    NSString *thumb = @"";
-    NSString *title = @"";
-    NSString *sub = @"";
-    NSString *share = @"";
+    NSString *thumb = @"aaaaa";
+    NSString *title = @"akklsafjlsfjklsafjsdlf";
+    NSString *sub = @"asldfjsdaklfjdslfjsadflsjdf";
+    NSString *share = @"asdkfjksladfjlksfjsdlf";
     [YCShare shareInstance].delegate = self;
+
+    NSLog(@"---- share before %@",[UIPasteboard generalPasteboard].string);
     [[YCShare shareInstance]shareWXContent:thumb
-                                               title:title
-                                            subTitle:sub
-                                            shareUrl:share scene:1];
+                                           title:title
+                                        subTitle:sub
+                                        shareUrl:share scene:1];
+    NSLog(@"---- share after %@",[UIPasteboard generalPasteboard].string);
 }
 
 /*!QQ分享*/
@@ -190,7 +196,7 @@
 
 - (void)sendWXContentReponse:(BaseResp *)resp {
     SendMessageToWXResp *_resp = (SendMessageToWXResp *)resp ;
-    
+    NSLog(@"---- content response%@",[UIPasteboard generalPasteboard].string);
     if (_resp.errCode == 0) {
         NSLog(@"分享成功");
     }
